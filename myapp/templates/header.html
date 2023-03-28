@@ -1,0 +1,133 @@
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="{% static 'assets/css/swiper-bundle.min.css' %}">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+
+    <title>Yashkumar Portfolio Website</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Yash</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="/#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/#services" class="nav__link">
+                            <i class="uil uil-briefcase nav__icon"></i>Services
+                        </a>
+                    </li>
+                
+                    </li>
+                    <li class="nav__item">
+                        <a href="{% url 'contact' %}" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+
+            </div>
+
+            <div class="nav__btns">
+
+                <!-- Theme change button -->
+
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"> </i>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+{% block content %}
+{% endblock %}
+
+        <section class="contact section" id="contact">
+      
+
+    <footer class="footer">
+
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Yash</h1>
+                    <span class="footer__subtitle">Backend developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="/#services" class="footer__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="/#about" class="footer__link">About</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'contact' %}" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="http://facebook.com" target="_blank" class="footer__social">
+                        <i class="uil uil-facebook"></i>
+                    </a>
+                    <a href="http://instagram.com" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="http://twitter.com/" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Bedimcode. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    
+    <!--==================== SWIPER JS ====================-->
+    <script src="{% static 'assets/js/swiper-bundle.min.js' %}"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+</section>
+</body>
+</html>
